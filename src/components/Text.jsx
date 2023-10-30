@@ -34,7 +34,7 @@ const Text = (props) => {
             <h2 className="mb70">스크립트를 익히는 방법</h2>
             <div className="text__inner container">
                 {TextInfo.map((t, key) => (
-                    <div className="text t${key+1}" key={key}>
+                    <div className={`text t${key+1}`} key={key}>
                         <h3 className="text__title">{t.title}</h3>
                         <p className="text__desc">{t.desc}</p>
                         <a className="text__btn" href="/">더보기</a>
